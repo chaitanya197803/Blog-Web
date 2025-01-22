@@ -40,9 +40,9 @@ const Navbar = () => {
 
                 <div className="md:hidden">
                     <Sheet>
-                        <spam className="mx-2">
+                        <span className="mx-2">
                             <ModeToggle />
-                        </spam>
+                        </span>
                         <SheetTrigger>
                             {/* <button className="focus:outline-none"> */}
                             {/* Add a hamburger icon here if desired */}

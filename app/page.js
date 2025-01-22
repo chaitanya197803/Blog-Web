@@ -5,116 +5,77 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      Before the telephone, verbal greetings often involved a time of day, such as "good morning". When the telephone began connecting people in different time zones, greetings without time gained popularity.[11]
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+        <div className="w-full text-center lg:mx-20 lg:text-left lg:w-1/2 lg:-mt-8">
+          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+            A <span className="font-semibold">free repository</span> for community <br className="hidden lg:block" /> components using <span className="font-semibold underline decoration-primary">Tailwind CSS</span>
+          </h1>
+          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+            Open source Tailwind UI components and templates to <br className="hidden lg:block" /> bootstrap your new apps, projects or landing sites!
+          </p>
+          <div className="mt-6 bg-transparent border rounded-lg dark:border-gray-700 lg:w-2/3 focus-within:border-primary focus-within:ring focus-within:ring-primary dark:focus-within:border-primary focus-within:ring-opacity-20">
+            <form action="https://www.creative-tim.com/twcomponents/search" className="flex flex-wrap justify-between md:flex-row">
+              <input type="search" name="query" placeholder="Search Components" required className="flex-1 h-10 px-4 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none lg:h-12 dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0" />
+              <button type="submit" className="flex items-center justify-center w-full p-2 m-1 text-white transition-colors duration-300 transform rounded-lg lg:w-12 lg:h-12 lg:p-0 bg-primary hover:bg-primary/70 focus:outline-none focus:bg-primary/70">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
+          <img src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg" alt="tailwind css components" className="w-full h-full max-w-md mx-auto" />
+        </div>
+      </section>
 
-      Thomas Edison is credited with popularizing hullo as a telephone greeting. In previous decades, hullo had been used as an exclamation of surprise (used early on by Charles Dickens in 1850)[12] and halloo was shouted at ferry boat operators by people who wanted to catch a ride.[13] According to one account, halloo was the first word Edison yelled into his strip phonograph when he discovered recorded sound in 1877.[12] Shortly after Alexander Graham Bell invented the telephone, he answered calls by saying "ahoy ahoy", borrowing the term used on ships.[13][14] There is no evidence the greeting caught on.[13] Edison suggested Hello! on August 15, 1877 in a letter to the president of Pittsburgh's Central District and Printing Telegraph Company, T. B. A. David:
+      <section className="py-20 bg-gray-100 dark:bg-gray-900">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Choose Your Plan</h2>
+          <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">Select the plan that fits your needs.</p>
+          <button className="mt-4 px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500">
+            Toggle Theme
+          </button>
+          <div className="mt-10 flex flex-col justify-center items-center md:flex-row  space-y-4 md:space-y-0 md:space-x-4">
+            <div className="w-full max-w-xs p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Basic</h3>
+              <p className="mt-2 text-gray-700 dark:text-gray-300">$10/month</p>
+              <ul className="mt-4 space-y-2">
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 1</li>
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 2</li>
+                <li className="text-gray-700 dark:text-gray-300">❌ Feature 3</li>
+              </ul>
+              <button className="mt-6 w-full px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500">Choose Plan</button>
+            </div>
+            <div className="w-full max-w-xs p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Standard</h3>
+              <p className="mt-2 text-gray-700 dark:text-gray-300">$20/month</p>
+              <ul className="mt-4 space-y-2">
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 1</li>
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 2</li>
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 3</li>
+              </ul>
+              <button className="mt-6 w-full px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500">Choose Plan</button>
+            </div>
+            <div className="w-full max-w-xs p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Premium</h3>
+              <p className="mt-2 text-gray-700 dark:text-gray-300">$30/month</p>
+              <ul className="mt-4 space-y-2">
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 1</li>
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 2</li>
+                <li className="text-gray-700 dark:text-gray-300">✔️ Feature 3</li>
+              </ul>
+              <button className="relative inline-flex h-10 m-4 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-sm font-medium text-gray-900 dark:text-white backdrop-blur-3xl">
+                  Let's Start
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      Friend David, I do not think we shall need a call bell as Hello! can be heard 10 to 20 feet away. What you think? Edison – P.S. first cost of sender & receiver to manufacture is only $7.00.[12]
-
-      The first name tags to include Hello may have 1880 at Niagara Falls, which was the site of the first telephone operators convention. By 1889, central telephone exchange operators were known as "hello-girls" because of the association between the greeting and the telephone.[14][15]
-
-      A 1918 novel uses the spelling "Halloa" in the context of telephone conversations.[16]
-
-      Hullo, hallo, and other spellings
-      "Hallo" redirects here. For other uses, see Hallo (disambiguation).
-      Hello might be derived from an older spelling variant, hullo, which the American Merriam-Webster dictionary describes as a "chiefly British variant of hello",[17] and which was originally used as an exclamation to call attention, an expression of surprise, or a greeting. Hullo is found in publications as early as 1803.[18] The word hullo is still in use, with the meaning hello.[19][20][21][22]
-
-      Hello is alternatively thought to come from the word hallo (1840) via hollo (also holla, holloa, halloo, halloa).[23] The definition of hollo is to shout or an exclamation originally shouted in a hunt when the quarry was spotted:[24][25]
-
-      If I fly, Marcius,/Halloo me like a hare.
-
-      — Coriolanus (I.viii.7), William Shakespeare
-      Fowler's has it that "hallo" is first recorded "as a shout to call attention" in 1864.[26] It is used by Samuel Taylor Coleridge's famous poem The Rime of the Ancient Mariner written in 1798:
-
-      And the good south wind still blew behind,
-      But no sweet bird did follow,
-      Nor any day for food or play
-
-      Came to the mariners' hollo!
-
-      In many Germanic languages, including German, Danish, Norwegian, Dutch and Afrikaans, "hallo" directly translates into English as "hello". In the case of Dutch, it was used as early as 1797 in a letter from Willem Bilderdijk to his sister-in-law as a remark of astonishment.[27]
-
-      Webster's dictionary from 1913 traces the etymology of holloa to the Old English halow and suggests: "Perhaps from ah + lo; compare Anglo Saxon ealā".
-
-      According to the American Heritage Dictionary, hallo is a modification of the obsolete holla (stop!), perhaps from Old French hola (ho, ho! + la, there, from Latin illac, that way).[28]
-
-      "Hello, World" computer program
-      Main article: "Hello, World!" program
-      Students learning a new computer programming language will often begin by writing a "Hello, World!" program, which does nothing but issue the message "Hello, World!" to the user (such as by displaying it on a screen). It has been used since the earliest programs, and in many computer languages. This tradition was further popularised after being printed in an introductory chapter of the book The C Programming Language by Kernighan & Ritchie.[29] The book had reused an example taken from a 1974 memo by Brian Kernighan at Bell Laboratories.[30]
-
-      Before the telephone, verbal greetings often involved a time of day, such as "good morning". When the telephone began connecting people in different time zones, greetings without time gained popularity.[11]
-
-      Thomas Edison is credited with popularizing hullo as a telephone greeting. In previous decades, hullo had been used as an exclamation of surprise (used early on by Charles Dickens in 1850)[12] and halloo was shouted at ferry boat operators by people who wanted to catch a ride.[13] According to one account, halloo was the first word Edison yelled into his strip phonograph when he discovered recorded sound in 1877.[12] Shortly after Alexander Graham Bell invented the telephone, he answered calls by saying "ahoy ahoy", borrowing the term used on ships.[13][14] There is no evidence the greeting caught on.[13] Edison suggested Hello! on August 15, 1877 in a letter to the president of Pittsburgh's Central District and Printing Telegraph Company, T. B. A. David:
-
-      Friend David, I do not think we shall need a call bell as Hello! can be heard 10 to 20 feet away. What you think? Edison – P.S. first cost of sender & receiver to manufacture is only $7.00.[12]
-
-      The first name tags to include Hello may have 1880 at Niagara Falls, which was the site of the first telephone operators convention. By 1889, central telephone exchange operators were known as "hello-girls" because of the association between the greeting and the telephone.[14][15]
-
-      A 1918 novel uses the spelling "Halloa" in the context of telephone conversations.[16]
-
-      Hullo, hallo, and other spellings
-      "Hallo" redirects here. For other uses, see Hallo (disambiguation).
-      Hello might be derived from an older spelling variant, hullo, which the American Merriam-Webster dictionary describes as a "chiefly British variant of hello",[17] and which was originally used as an exclamation to call attention, an expression of surprise, or a greeting. Hullo is found in publications as early as 1803.[18] The word hullo is still in use, with the meaning hello.[19][20][21][22]
-
-      Hello is alternatively thought to come from the word hallo (1840) via hollo (also holla, holloa, halloo, halloa).[23] The definition of hollo is to shout or an exclamation originally shouted in a hunt when the quarry was spotted:[24][25]
-
-      If I fly, Marcius,/Halloo me like a hare.
-
-      — Coriolanus (I.viii.7), William Shakespeare
-      Fowler's has it that "hallo" is first recorded "as a shout to call attention" in 1864.[26] It is used by Samuel Taylor Coleridge's famous poem The Rime of the Ancient Mariner written in 1798:
-
-      And the good south wind still blew behind,
-      But no sweet bird did follow,
-      Nor any day for food or play
-
-      Came to the mariners' hollo!
-
-      In many Germanic languages, including German, Danish, Norwegian, Dutch and Afrikaans, "hallo" directly translates into English as "hello". In the case of Dutch, it was used as early as 1797 in a letter from Willem Bilderdijk to his sister-in-law as a remark of astonishment.[27]
-
-      Webster's dictionary from 1913 traces the etymology of holloa to the Old English halow and suggests: "Perhaps from ah + lo; compare Anglo Saxon ealā".
-
-      According to the American Heritage Dictionary, hallo is a modification of the obsolete holla (stop!), perhaps from Old French hola (ho, ho! + la, there, from Latin illac, that way).[28]
-
-      "Hello, World" computer program
-      Main article: "Hello, World!" program
-      Students learning a new computer programming language will often begin by writing a "Hello, World!" program, which does nothing but issue the message "Hello, World!" to the user (such as by displaying it on a screen). It has been used since the earliest programs, and in many computer languages. This tradition was further popularised after being printed in an introductory chapter of the book The C Programming Language by Kernighan & Ritchie.[29] The book had reused an example taken from a 1974 memo by Brian Kernighan at Bell Laboratories.[30]
-
-      Before the telephone, verbal greetings often involved a time of day, such as "good morning". When the telephone began connecting people in different time zones, greetings without time gained popularity.[11]
-
-      Thomas Edison is credited with popularizing hullo as a telephone greeting. In previous decades, hullo had been used as an exclamation of surprise (used early on by Charles Dickens in 1850)[12] and halloo was shouted at ferry boat operators by people who wanted to catch a ride.[13] According to one account, halloo was the first word Edison yelled into his strip phonograph when he discovered recorded sound in 1877.[12] Shortly after Alexander Graham Bell invented the telephone, he answered calls by saying "ahoy ahoy", borrowing the term used on ships.[13][14] There is no evidence the greeting caught on.[13] Edison suggested Hello! on August 15, 1877 in a letter to the president of Pittsburgh's Central District and Printing Telegraph Company, T. B. A. David:
-
-      Friend David, I do not think we shall need a call bell as Hello! can be heard 10 to 20 feet away. What you think? Edison – P.S. first cost of sender & receiver to manufacture is only $7.00.[12]
-
-      The first name tags to include Hello may have 1880 at Niagara Falls, which was the site of the first telephone operators convention. By 1889, central telephone exchange operators were known as "hello-girls" because of the association between the greeting and the telephone.[14][15]
-
-      A 1918 novel uses the spelling "Halloa" in the context of telephone conversations.[16]
-
-      Hullo, hallo, and other spellings
-      "Hallo" redirects here. For other uses, see Hallo (disambiguation).
-      Hello might be derived from an older spelling variant, hullo, which the American Merriam-Webster dictionary describes as a "chiefly British variant of hello",[17] and which was originally used as an exclamation to call attention, an expression of surprise, or a greeting. Hullo is found in publications as early as 1803.[18] The word hullo is still in use, with the meaning hello.[19][20][21][22]
-
-      Hello is alternatively thought to come from the word hallo (1840) via hollo (also holla, holloa, halloo, halloa).[23] The definition of hollo is to shout or an exclamation originally shouted in a hunt when the quarry was spotted:[24][25]
-
-      If I fly, Marcius,/Halloo me like a hare.
-
-      — Coriolanus (I.viii.7), William Shakespeare
-      Fowler's has it that "hallo" is first recorded "as a shout to call attention" in 1864.[26] It is used by Samuel Taylor Coleridge's famous poem The Rime of the Ancient Mariner written in 1798:
-
-      And the good south wind still blew behind,
-      But no sweet bird did follow,
-      Nor any day for food or play
-
-      Came to the mariners' hollo!
-
-      In many Germanic languages, including German, Danish, Norwegian, Dutch and Afrikaans, "hallo" directly translates into English as "hello". In the case of Dutch, it was used as early as 1797 in a letter from Willem Bilderdijk to his sister-in-law as a remark of astonishment.[27]
-
-      Webster's dictionary from 1913 traces the etymology of holloa to the Old English halow and suggests: "Perhaps from ah + lo; compare Anglo Saxon ealā".
-
-      According to the American Heritage Dictionary, hallo is a modification of the obsolete holla (stop!), perhaps from Old French hola (ho, ho! + la, there, from Latin illac, that way).[28]
-
-      "Hello, World" computer program
-      Main article: "Hello, World!" program
-      Students learning a new computer programming language will often begin by writing a "Hello, World!" program, which does nothing but issue the message "Hello, World!" to the user (such as by displaying it on a screen). It has been used since the earliest programs, and in many computer languages. This tradition was further popularised after being printed in an introductory chapter of the book The C Programming Language by Kernighan & Ritchie.[29] The book had reused an example taken from a 1974 memo by Brian Kernighan at Bell Laboratories.[30]
     </main>
   );
 }
