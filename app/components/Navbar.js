@@ -1,8 +1,9 @@
-"use client"
+
 import React from 'react'
 import Link from 'next/link';
-import { Button } from "@/components/ui/button"
+import { Button } from './ui/button';
 import { HamIcon } from 'lucide-react';
+
 import {
     Sheet,
     SheetContent,
@@ -10,7 +11,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from "@/components/ui/sheet"
+} from "./ui/sheet"
 
 import { ModeToggle } from './theam-btn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,7 +21,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
-        <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur">
+        <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur z-10">
             <div className="container mx-auto flex justify-between border-b pb-6 items-center">
                 <Link href={"/"}><div className="text-lg font-bold md:mx-8">
                     Chaitanya / Blog
