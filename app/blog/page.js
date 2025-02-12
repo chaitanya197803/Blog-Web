@@ -1,36 +1,12 @@
 import React from 'react';
+// import Link from 'next/link';
+import fs from "fs";
+import mater from "gray-matter"
+import Image from 'next/image';
 
-const blogs = [
-    {
-        title: "Understanding React",
-        description: "A deep dive into the React library and its features.",
-        slug: "understanding-react",
-        date: "2023-10-01",
-        author: "John Doe",
-        image: "https://img.freepik.com/free-photo/teamwork-making-online-blog_53876-94868.jpg"
-    },
-    {
-        title: "JavaScript Best Practices",
-        description: "Learn the best practices for writing clean and efficient JavaScript.",
-        slug: "javascript-best-practices",
-        date: "2023-09-15",
-        author: "Jane Smith",
-        image: "https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg"
-    },
-    {
-        title: "C++ Best Practices",
-        description: "Learn the best practices for writing clean and efficient C++",
-        slug: "C++ -best-practices",
-        date: "2023-09-15",
-        author: "Sagar",
-        image: "https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg"
-    },
-    // Add more blog objects as needed
-];
-
-const BlogCard = ({ title, description, link, date, author, image }) => (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 dark:shadow-white dark:shadow-sm">
-        <img className="w-full" src={image} alt={title} />
+const BlogCard = ({ key,title, description, link, date, author, image }) => (
+    <div key={key} className="max-w-sm rounded overflow-hidden shadow-lg m-4 dark:shadow-white dark:shadow-sm hover:shadow-xl transition-shadow-3xl duration-300">
+        <Image className="object-cover object-center" height={250} width={400} src={`/${image}`} alt={title} />
         <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{title}</div>
             <p className=" text-base">{description}</p>
@@ -50,6 +26,15 @@ const BlogCard = ({ title, description, link, date, author, image }) => (
 );
 
 const Page = () => {
+
+const dirContent =fs.readdirSync("component", "utf-8")
+const blogs = dirContent.map(file=>{
+    const fileContent = fs.readFileSync(`component/${file}`, "utf-8")
+    const {data} = mater(fileContent)
+    return data
+})
+
+
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-3xl font-bold mb-6 text-center">Blog's</h1>

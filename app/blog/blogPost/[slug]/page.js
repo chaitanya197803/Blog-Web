@@ -1,9 +1,9 @@
-const blog = {
-    author: "John Doe",
-    description: "This is a sample blog post.",
-    date: "2023-10-01",
-    content: "<p>This is the HTML content of the blog post.</p>"
-};
+// const blog = {
+//     author: "John Doe",
+//     description: "This is a sample blog post.",
+//     date: "2023-10-01",
+//     content: "<p>This is the HTML content of the blog post.</p>"
+// };
 
 export default async function Page({ params }) {
     // const slug = (await params).slug

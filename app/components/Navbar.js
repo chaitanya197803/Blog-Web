@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Link from 'next/link';
-import { Button } from './ui/button';
+
 import { HamIcon } from 'lucide-react';
 
 import {
@@ -13,9 +13,9 @@ import {
     SheetTrigger,
 } from "./ui/sheet"
 
-import { ModeToggle } from './theam-btn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Button } from './ui/button';
 
 
 
@@ -35,14 +35,14 @@ const Navbar = () => {
                     <div className='flex items-center'>
                         <Button variant="outline" className="mx-1">Login</Button>
                         <Button variant="outline" className="mx-1">Signup</Button>
-                        <ModeToggle />
+                      
                     </div>
                 </div>
 
                 <div className="md:hidden">
                     <Sheet>
                         <span className="mx-2">
-                            <ModeToggle />
+                         
                         </span>
                         <SheetTrigger>
                             {/* <button className="focus:outline-none"> */}

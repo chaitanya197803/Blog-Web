@@ -91,6 +91,7 @@ export default function Home() {
       </section>
 
       {/* welcome toour plateform section */}
+      
       <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-white animate-bounce">Welcome to Our Platform!</h2>
@@ -127,7 +128,7 @@ export default function Home() {
               <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Read More</button>
             </div> */}
           </div>
-          <div className="flex flex-row mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex-row mt-8 mx-10 grid grid-cols-1 md:grid-cols-3 gap-6">
             <BlogCard />
             <BlogCard />
             <BlogCard />
@@ -137,30 +138,30 @@ export default function Home() {
 
 
       {/* Footer */}
-      <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-2 ">
-        <div class="w-full max-w-screen-xl mx-auto p-2 md:py-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" class="flex items-center mb-2 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> */}
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Chaitanya | Blog</span>
+      <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-2 ">
+        <div className="w-full max-w-screen-xl mx-auto p-2 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" className="flex items-center mb-2 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Chaitanya | Blog</span>
             </a>
-            <ul class="flex flex-wrap items-center mb-4 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul className="flex flex-wrap items-center mb-4 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="/about" class="hover:underline me-2 md:me-6">About</a>
+                <a href="/about" className="hover:underline me-2 md:me-6">About</a>
               </li>
               <li>
-                <a href="#" class="hover:underline me-2 md:me-6">Privacy Policy</a>
+                <a href="#" className="hover:underline me-2 md:me-6">Privacy Policy</a>
               </li>
               <li>
-                <a href="#" class="hover:underline me-2 md:me-6">Licensing</a>
+                <a href="#" className="hover:underline me-2 md:me-6">Licensing</a>
               </li>
               <li>
-                <a href="#" class="hover:underline">Contact</a>
+                <a href="#" className="hover:underline">Contact</a>
               </li>
             </ul>
           </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">Chaitanya</a>. All Rights Reserved.</span>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" className="hover:underline">Chaitanya</a>. All Rights Reserved.</span>
         </div>
       </footer>
 
